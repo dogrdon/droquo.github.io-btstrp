@@ -5,9 +5,10 @@ description: "List all projects"
 ---
 {% include JB/setup %}
 
-<div class="entries">
-    {% for post in site.JB.projects %}
 
+<div class="entries">
+    {% for post in site.categories.project %}
+  
     <a href="{{ post.url }}">
 
       <h4 class="post-title">{{ post.title }}</h4>
