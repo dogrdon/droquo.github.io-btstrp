@@ -10,9 +10,19 @@ tagline: Culture is free, copyright is an illusion
 
 This blog contains sample posts which help stage pages and blog data.
 When you don't need the samples anymore just delete the `_posts/core-samples` folder.
+{% highlight bash %}
+$ rm -rf _posts/core-samples
+{% endhighlight %}
 
-    $ rm -rf _posts/core-samples
-
+And here's some `random python code`
+{% highlight python %}
+def init_db():
+	'''initiate our db FROM the app rather than the command line - sqlite3 /path/to/file.db < schema.sql -'''
+	with closing(hello_db()) as db:
+		with app.open_resource('schema.sql') as f:
+			db.cursor().executescript(f.read())
+		db.commit()
+{% endhighlight %}
 Here's a sample "posts list".
 
 <ul class="posts">
