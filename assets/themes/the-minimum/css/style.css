@@ -228,10 +228,12 @@ pre {
 .the-header .nav-global {
   text-transform: uppercase;
 }
-.the-header .nav-global .forkme {
-  position: relative;
-  top: 2px;
+
+.the-header .nav-global ul li a{
+  border: solid 1px #777;
+  padding: 3px;
 }
+
 /* MAIN
 --------------------------------------------------------------------------------- */
 .unit-article header {
