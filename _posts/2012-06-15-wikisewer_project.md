@@ -3,6 +3,7 @@ layout: post
 title: "Wikisewer"
 description: ""
 category: project 
+comments: false
 tags: [wikisewer, python, nodejs]
 ---
 {% include JB/setup %}

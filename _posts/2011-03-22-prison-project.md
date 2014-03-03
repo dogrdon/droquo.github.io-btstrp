@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "prison project"
+title: "Department of Justice Data Analysis"
 description: ""
 category: project
 tags: [R, data analysis]
@@ -15,21 +15,20 @@ tags: [R, data analysis]
 
 <a style="margin-left: 43%; padding: 4px; " class="source" href="https://explore.data.gov/Law-Enforcement-Courts-and-Prisons/National-Corrections-Reporting-Program-2004-United/v26k-cyk8">Get the dataset</a>
 <br/>
-<br/>
-<br/>
 
 <!-- TABBED CONTENT BELOW -->
 
-<div id="tabs">
-  <ul>
-    <li><a href="#tabs-1">Exploration</a></li>
-    <li><a href="#tabs-2">Two States</a></li>
-    <li><a href="#tabs-3">Scale</a></li>
-    <li><a href="#tabs-4">Final Pass</a></li>
+
+  <ul class="nav nav-tabs">
+    <li class="active"><a href="#tabs-1" data-toggle="tab">Exploration</a></li>
+    <li><a href="#tabs-2" data-toggle="tab">Two States</a></li>
+    <li><a href="#tabs-3" data-toggle="tab">Scale</a></li>
+    <li><a href="#tabs-4" data-toggle="tab">Final Pass</a></li>
   </ul>
   
+<div class="tab-content">  
 <!--EXPLORATORY TAB-->
-  <div id="tabs-1">
+	<div id="tabs-1" class="tab-pane active">
 
 <a class="internal-link" href="#r1">Jump to this section's R code</a><br><br>
     <strong>Race and Incarceration</strong>
@@ -174,7 +173,7 @@ qplot(birthyear, priors_prison, data = data, xlim=c(1900,2000))
 <!--END OF EXPLORATORY TAB-->
 
 <!--TWO STATES TAB-->
-  <div id="tabs-2">
+  <div id="tabs-2" class="tab-pane">
 <a class="internal-link" href="#r2">Jump to this section's R code</a><br><br>
 <strong>Tale of Two Prison Systems: Georgia and Michigan</strong>
 
@@ -362,8 +361,8 @@ wtotalmog
 #modifying the levels for the education vector
 > weducationm &gt;- factor(educationm)
 > weducationg &gt;- factor(educationg)
-> levels(weducationm) &gt;- c("<= 8th Grade", "Some High School", "9th Grade", "10th Grade", "11th Grade", "12th or GED", "Some College", "College Degree", "Special/Ungraded")
-> levels(weducationg) &gt;- c("<= 8th Grade", "Some High School", "9th Grade", "10th Grade", "11th Grade", "12th or GED", "Some College", "College Degree", "Special/Ungraded")
+> levels(weducationm) &gt;- c("&gt;= 8th Grade", "Some High School", "9th Grade", "10th Grade", "11th Grade", "12th or GED", "Some College", "College Degree", "Special/Ungraded")
+> levels(weducationg) &gt;- c("&gt;= 8th Grade", "Some High School", "9th Grade", "10th Grade", "11th Grade", "12th or GED", "Some College", "College Degree", "Special/Ungraded")
 
 #and for race
 > fmichrace &gt;- factor(michrace)
@@ -438,7 +437,7 @@ qplot(fmichrace, totalmom, data = michdata2, na.rm = TRUE, geom="boxplot", fill=
 
   </div>
   <!-- END OF TWO STATES -->
-  <div id="tabs-3">
+  <div id="tabs-3" class="tab-pane">
     <a class="internal-link" href="#r3">Jump to this section's R code</a><br><br>
     <p>For this installment, we wanted to inspect the relationship between Total Years Michigan inmates spent prior to their current sentence and the total years of their current sentence against their level of education and race.</p>  
 
@@ -506,7 +505,7 @@ ttyr&gt;-(agereleasem - ageadmitm)
 
 #factoring and creating levels for our categorical vectors, education and race
 > weducationm &gt;- factor(educationm)
-> levels(weducationm) &gt;- c("<= 8th Grade", "Some High School", "9th Grade", "10th Grade", "11th Grade", "12th or GED", "Some College", "College Degree", "Special/Ungraded")
+> levels(weducationm) &gt;- c("&gt;= 8th Grade", "Some High School", "9th Grade", "10th Grade", "11th Grade", "12th or GED", "Some College", "College Degree", "Special/Ungraded")
 
 > fmichrace &gt;- factor(michrace)
 > levels(fmichrace) &gt;- c("White", "Black", "Native", "Asian", "Pacific", "Other")
@@ -529,7 +528,7 @@ michdata2=michdata2[ttyr<30,]
 
 {%endhighlight%}
   </div> 
-  <div id="tabs-4">
+  <div id="tabs-4" class="tab-pane">
 
     <a class="internal-link" href="#r4">Jump to this section's R code</a><br><br>
 
@@ -812,5 +811,5 @@ p + stat_density(aes(ymax = ..density.., ymin = -..density..), fill = "grey50", 
 {%endhighlight%}
 
 
-  </div>
-</div>
+</div> <!-- I am what now? -->
+</div><!-- end of tab content -->
