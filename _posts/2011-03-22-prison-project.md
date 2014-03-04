@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: project_post
 title: "Department of Justice Data Analysis"
 description: ""
 category: project

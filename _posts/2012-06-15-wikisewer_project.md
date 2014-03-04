@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: project_post
 title: "Wikisewer"
 description: ""
 category: project 
