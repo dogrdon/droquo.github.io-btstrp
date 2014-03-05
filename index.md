@@ -5,25 +5,9 @@ tagline:
 ---
 {% include JB/setup %}
 
-    
-## Posts
+![spinning pentakisdodechahedron on wikipedia](http://upload.wikimedia.org/wikipedia/commons/f/fc/Pentakisdodecahedron02.gif "Spinning Pentakisdodecahedron")
 
-This blog contains sample posts which help stage pages and blog data.
-When you don't need the samples anymore just delete the `_posts/core-samples` folder.
-{% highlight bash %}
-$ rm -rf _posts/core-samples
-{% endhighlight %}
-
-And here's some `random python code`
-{% highlight python %}
-def init_db():
-	'''initiate our db FROM the app rather than the command line - sqlite3 /path/to/file.db < schema.sql -'''
-	with closing(hello_db()) as db:
-		with app.open_resource('schema.sql') as f:
-			db.cursor().executescript(f.read())
-		db.commit()
-{% endhighlight %}
-Here's a sample "posts list".
+##Posts
 
 <ul class="posts">
   {% for post in site.posts %}
