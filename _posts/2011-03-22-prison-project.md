@@ -4,6 +4,7 @@ title: "Department of Justice Data Analysis"
 description: ""
 category: project
 tags: [R, data analysis]
+image: /assets/images/projects/prison/r4-1-tsr.png
 ---
 {% include JB/setup %}
 

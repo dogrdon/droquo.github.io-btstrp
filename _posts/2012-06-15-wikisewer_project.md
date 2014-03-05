@@ -5,6 +5,7 @@ description: ""
 category: project 
 comments: false
 tags: [wikisewer, python, nodejs]
+image: /assets/images/projects/wikisewer/wikisewer.png
 ---
 {% include JB/setup %}
 

@@ -1,7 +1,7 @@
 ---
 layout: page
-title: Sbtxt...
-tagline: Culture is free, copyright is an illusion
+title:
+tagline: 
 ---
 {% include JB/setup %}
 
