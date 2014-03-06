@@ -1,10 +1,26 @@
+<style>
+	
+	img.home_icon{
+		display: inline;
+		height: 40px;
+		width: 40px;
+		margin-right: 1%;
+	}
+
+</style>
+
 <article class="unit-article layout-page">
 	<div class="unit-inner unit-article-inner">
 		<div class="content">
 			<header>
 				<div class="unit-head">
 					<div class="unit-inner unit-head-inner">
-						<h1 class="h2 entry-title">{{ page.title }}</h1>
+						{% if page.url != '/index.html'%}
+							<h1 class="h2 entry-title">{{ page.title }}</h1>
+						{% endif %}
+						{% if page.url == '/index.html' %}
+							<img class="home_icon" src="/assets/images/library.png"/><img class="home_icon" src="/assets/images/database.png"/><img class="home_icon" src="/assets/images/briefcase.png"/><img class="home_icon" src="/assets/images/sword.png"/>
+						{% endif %}
 					</div><!-- unit-inner -->
 				</div><!-- unit-head -->
 			</header>

@@ -24,3 +24,9 @@ img.port-thumb:hover{
 img{
 	width: 100%;
 }
+
+img.home_icon{
+	display: inline;
+	height: 50px;
+	width: 50px;
+}

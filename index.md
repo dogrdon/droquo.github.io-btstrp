@@ -1,7 +1,8 @@
 ---
 layout: page
-title:
+title: ![title](http://www.dan-dare.org/FreeFun/Images/CartoonsMoviesTV/ShrekWallpaper800.jpg)
 tagline: 
+category: home
 ---
 {% include JB/setup %}
 
