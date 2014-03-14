@@ -16,11 +16,27 @@ While making the initial explorations for a recent project involving the digitiz
 
 Putting the book and its conveyence into historical perspective is <a href="http://www.theatlantic.com/technology/archive/2014/02/life-before-and-after-page-numbers/284002/" target="_blank"> an article from the Atlantic </a> that discusses how paginated books only make up a part of the history of written texts. And as we move into a time of increasing digital reading material, the page marker gives way to other forms of breaking up and pointing to parts of a text.
 
-In the context of the cultural institution (to say nothing of e-books and e-readers), there are already a few different open source book viewers that take on the display of texts for which the text is not the only important feature. What I've found so far (as possible client end solutions for sharing our digital collections) are: <a href="https://openlibrary.org/dev/docs/bookreader" target="_blank">The Internet Archive/OpenLibrary BookReader</a>; <a href="https://github.com/LibraryOfCongress/wdl-viewer" target="_blank"> The Library of Congress' World Digital Library Viewer</a>; <a href="http://www.wellcome.ac.uk/News/Media-office/Press-releases/2014/WTP055613.htm" target="_blank">The Wellcome Library Player</a>; and <a href="http://open.blogs.nytimes.com/2010/03/27/a-new-view-introducing-doc-viewer-2-0/" targe="_blank">The New York Times/DocumentCloud Document Viewer</a> (only to name a few). 
+In the context of the cultural institution (to say nothing of e-books and e-readers), there are already a few different open source book viewers that take on the display of texts for which the text is not the only important feature. What I've found so far (as possible client end solutions for sharing our digital collections) are: <a href="https://openlibrary.org/dev/docs/bookreader" target="_blank">The Internet Archive/OpenLibrary BookReader</a>; <a href="https://github.com/LibraryOfCongress/wdl-viewer" target="_blank"> The Library of Congress' World Digital Library Viewer</a>; <a href="http://www.wellcome.ac.uk/News/Media-office/Press-releases/2014/WTP055613.htm" target="_blank">The Wellcome Library Player</a>; and <a href="http://open.blogs.nytimes.com/2010/03/27/a-new-view-introducing-doc-viewer-2-0/" target="_blank">The New York Times/DocumentCloud Document Viewer</a> (only to name a few). They all appear to be great options and all appear to have fantastic documentation and demos on their sites.
+
+<div class="figure">
+	<div class="figcaption" style="width: 480px; display:block; margin: 0 auto;">The Internet Archive/OpenLibrary BookReader</div>
+<iframe src="http://www.archive.org/stream/abroadcranethoma00craniala?ui=embed" width="480px" height="480px" style="display:block; margin: 0 auto;" allowfullscreen="allowfullscreen">&nbsp;</iframe>
+</div>
+
+<div class="figure">
+	<div class="figcaption" style="width: 480px; display:block; margin: 0 auto;">The Library of Congress' World Digital Library Viewer</div>
+<iframe src="http://www.wdl.org/en/item/211/view/1/1/" width="480px" height="480px" style="display:block; margin: 0 auto;" allowfullscreen="allowfullscreen">&nbsp;</iframe>
+</div>
+
+<div class="figure">
+<div class="wellcomePlayer" data-uri="http://wellcomelibrary.org/package/b18021013" data-assetsequenceindex="0" data-assetindex="0" data-zoom="-0.8052,0,2.6105,1.4068" data-config="/service/playerconfig" style="width:480px; height:480px; background-color: #000; display: block; margin: 0 auto;" ></div>
+<script type="text/javascript" id="embedWellcomePlayer" src="http://wellcomelibrary.org/spas/player/build/wellcomeplayer/js/embed.js"></script><script type="text/javascript">/* wordpress fix */</script>
+<div class="figcaption">The Wellcome Library Player</div>
+</div>
 
 Each of these, and other viewers online, have their indivdual design decisions as they were all built with slightly different general use cases in mind. Some have the book paging facsimile, showing both pages side by side and approximating the movenment of pages being turned, some do not. Some offer a paging animation clicking on the pages themselves, some only buttons in a control panel, making for a more fluid mobile/touchscreen experience. Most of them zoom. What we might be seeing though is the settling of a grammar for interacting with digital book displays.
 
-And they do share a few commonalities that point towards the future of viewing books (or paintings, or documents or even videos and audio files online). 
+And they do share a few commonalities that point towards the future of viewing books (or paintings, or documents or even videos and audio files online). Many of them have full text search. Most have the option to view pages as thumbnails to more easily browse through an entire book at a glance. Some provide windows for tables of contents and object metadata.
 
 Though in reviewing these different viewers, I am asking myself what it is that would make a book in digital format true to its historical character, true to it's character as a physical, primarily analog artificat, but also useful and compelling in a contemporary, digital experience. 
 
