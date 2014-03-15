@@ -15,7 +15,7 @@ description: "List all projects"
       <br/>
 
           
-      <img src="{{ post.image }}"/> 
+      <img class="port-thumb" src="{{ post.image }}"/> 
 
     </a>
 
